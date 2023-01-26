@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Kajetan Wachowski</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <script src="https://kit.fontawesome.com/9da725e0d7.js" crossorigin="anonymous"></script>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/ico/favicon-16x16.png">
+    <link rel="manifest" href="/img/ico/site.webmanifest">
+    <link rel="mask-icon" href="/img/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+    <div class="col-2"></div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">KW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+            <div class="navbar-nav">
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/">Home</a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2 active" aria-current="page" href="/portfolio">Portfolio</a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/skills">
+                    <span lang="pl">Umiejętności</span>
+                    <span lang="en">Skills</span>
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/offer">
+                    <span lang="pl">Oferta</span>
+                    <span lang="en">Offer</span>
+                    
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/contact">
+                    <span lang="pl">Kontakt</span>
+                    <span lang="en">Contact</span>
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" id="selectEn" onclick="setLang('en'); return false">
+                    <img src="/img/gb.svg" alt="English" width="25" title="English language">
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" id="selectPl" onclick="setLang('pl'); return false">
+                    <img src="/img/pl.svg" alt="Polski" width="25" title="Język polski">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row portfolio justify-content-center align-items-start">
+        <div class="col-12 text-center">
+            <h1>
+                Portfolio
+            </h1>
+            <p class="mb-0">
+                <span lang="pl">Najnowsze prace</span>
+                <span lang="en">Most recent work</span>
+            </p>
+        </div>
+
+
+
+          
+        <div id="mainCarousel" class="carousel mt-5 w-10/12 max-w-5xl mx-auto">
+        <div
+            class="carousel__slide"
+            data-src="/img/asgr1-full.png"
+            data-fancybox="gallery"
+        >
+            <img src="/img/asgr1.png" />
+        </div>
+        <div
+            class="carousel__slide"
+            data-src="/img/skr1-full.png"
+            data-fancybox="gallery"
+        >
+            <img src="/img/skr1.png" />
+        </div>
+        <div
+            class="carousel__slide"
+            data-src="/img/bb1-full.png"
+            data-fancybox="gallery"
+        >
+            <img src="/img/bb1.png" />
+        </div>
+        <div
+            class="carousel__slide"
+            data-src="/img/asgr2-full.png"
+            data-fancybox="gallery"
+        >
+            <img src="/img/asgr2.png" />
+        </div>
+        <div
+            class="carousel__slide"
+            data-src="/img/skr2-full.png"
+            data-fancybox="gallery"
+        >
+            <img data-lazy-src="/img/skr2.png" />
+        </div>
+        <div
+            class="carousel__slide"
+            data-src="/img/bb2-full.png"
+            data-fancybox="gallery"
+        >
+            <img src="/img/bb2.png" />
+        </div>
+        <div
+            class="carousel__slide"
+            data-src="/img/asgr3-full.png"
+            data-fancybox="gallery"
+        >
+            <img src="/img/asgr3.png" />
+        </div>
+        </div>
+        
+        <div id="thumbCarousel" class="carousel mb-5 max-w-xl mx-auto">
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/asgr1-thumb.png" />
+        </div>
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/skr1-thumb.png" />
+        </div>
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/bb1-thumb.png" />
+        </div>
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/asgr2-thumb.png" />
+        </div>
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/skr2-thumb.png" />
+        </div>
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/bb2-thumb.png" />
+        </div>
+        <div class="carousel__slide">
+            <img class="panzoom__content" src="/img/asgr3-thumb.png" />
+        </div>
+        </div>
+        <div class="row justify-content-center mt-5 gx-5">
+
+            <div class="col-12 col-md-6 col-lg-3 text-center d-flex flex-column mb-5 mb-lg-0">
+                <div class="imgContainer" id="stadnina">
+                    <div class="imgBlur"></div>
+                    <div class="img"></div>
+                </div>
+                <h3 class="mt-4 mb-0">Stadnina Koni Runowo</h3>
+                <small>Wordpress</small>
+                <p class="mt-3" style="text-align: justify;">
+                    <span lang="pl">
+                        Prosta lecz rozbudowana strona prezentująca ofertę oraz obiekt stadniny koni na Pomorzu. 
+                        Zaprojektowana i wykonana w całości przeze mnie w Wordpressie (całkowity rework starej strony). 
+                        Jest również podłączona do autorskiego systemu zapisów na obozy wakacyjne.
+                    </span>
+                    <span lang="en">
+                        A simple but extensive website presenting the offer and facility of a horse farm in Pomerania.
+                        Designed and made entirely by me in Wordpress (total rework of the old website).
+                        It is also connected to the proprietary registration system for holiday camps.
+                    </span>
+                </p>
+                <a href="https://www.stadninarunowo.pl/pl/" target="_blank" class="mt-auto">
+                    <button class="btn btn-primary btn-md" type="button">
+                        <span lang="pl">Wyświetl</span>
+                        <span lang="en">View</span> <i class="fa-solid fa-link ml-2"></i>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 text-center d-flex flex-column mb-5 mb-lg-0">
+                <div class="imgContainer" id="bluebee">
+                    <div class="imgBlur"></div>
+                    <div class="img"></div>
+                </div>
+                <h3 class="mt-4 mb-0">Blue Bee</h3>
+                <small>Wordpress</small>
+                <p class="mt-3" style="text-align: justify;">
+                    <span lang="pl">
+                        Statyczna strona służąca jako "wizytówka". Design mojego autorstwa. Oparta na Wordpressie.
+                    </span>
+                    <span lang="en">
+                        A static page serving as a "business card". Designed by me. Based on Wordpress.
+                    </span>
+                </p>
+                <a href="https://www.bluebee.edu.pl/" target="_blank" class="mt-auto">
+                    <button class="btn btn-primary btn-md" type="button">
+                        <span lang="pl">Wyświetl</span>
+                        <span lang="en">View</span> <i class="fa-solid fa-link ml-2"></i>
+                    </button>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 text-center d-flex flex-column mb-5 mb-lg-0">
+                <div class="imgContainer" id="asgr">
+                    <div class="imgBlur"></div>
+                    <div class="img"></div>
+                </div>
+                <h3 class="mt-4 mb-0">ASG Runowo</h3>
+                <small>Wordpress</small>
+                <p class="mt-3" style="text-align: justify;">
+                    <span lang="pl">
+                        Kolejna rozbudowana strona reprezentatywna. Również podłączona do systemu zapisów. Zarządzana przeze mnie do dzisiaj.
+                    </span>
+                    <span lang="en">
+                        Another extensive representative site. Also connected my holiday camp registration system. Managed by me to this day.
+                    </span>
+                </p>
+                <a href="https://asgrunowo.pl/pl/" target="_blank" class="mt-auto">
+                    <button class="btn btn-primary btn-md" type="button">
+                        <span lang="pl">Wyświetl</span>
+                        <span lang="en">View</span> <i class="fa-solid fa-link ml-2"></i>
+                    </button>
+                </a>
+            </div>
+            
+        </div>
+        
+
+
+    </div>
+</div>
+
+<footer>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color:rgba(255, 255, 255, 0.1)">
+    Copyright © <span id="year"></span> Kajetan Wachowski
+  </div>
+</footer>
+
+<!-- Cookie modal -->
+<div id="cookieModal" class="cookieModal">
+    <div class="cookieModal-content">
+        <h3>
+            <span lang="pl">Polityka prywatności</span>
+            <span lang="en">Privacy policy</span>
+        </h3>
+        <p style="text-align:justify">
+            <span lang="pl">Ta strona korzysta z plików cookies aby świadczyć usługi na najwyższym poziomie. 
+            Aby ją przeglądać, wymagana jest akceptacja <a href="/uploads/polityka-prywatnosci.pdf" target="_blank">polityki prywatności</a>.</span>
+            <span lang="en">This website uses cookies to provide services at the highest level. 
+            To browse it, it is required to accept the <a href="/uploads/polityka-prywatnosci.pdf" target="_blank">privacy policy</a>.</span>
+        </p>
+        <div class="d-flex flex-row-reverse">
+            <button class="btn btn-primary btn-lg" type="button" onclick="closeModal()">
+                <span lang="pl">Akceptuję</span>
+                <span lang="en">Accept</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- ----------- -->
+<script src="/js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+    // Initialise Carousel
+    const mainCarousel = new Carousel(document.querySelector("#mainCarousel"), {
+    Dots: false,
+    center: true,
+    });
+
+    // Thumbnails
+    const thumbCarousel = new Carousel(document.querySelector("#thumbCarousel"), {
+    Sync: {
+        target: mainCarousel,
+        friction: 0,
+    },
+    Dots: false,
+    Navigation: false,
+    center: true,
+    slidesPerPage: 1,
+    infinite: false,
+    
+    });
+
+    // Customize Fancybox
+    Fancybox.bind('[data-fancybox="gallery"]', {
+    Carousel: {
+        on: {
+        change: (that) => {
+            mainCarousel.slideTo(mainCarousel.findPageForSlide(that.page), {
+            friction: 0,
+            });
+        },
+        },
+    },
+    });
+</script>
+</body>
+</html>

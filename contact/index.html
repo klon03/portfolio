@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Kajetan Wachowski</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/9da725e0d7.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/ico/favicon-16x16.png">
+    <link rel="manifest" href="/img/ico/site.webmanifest">
+    <link rel="mask-icon" href="/img/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/ico/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/img/ico/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+    <div class="col-2"></div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">KW</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID"
+            aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarID">
+            <div class="navbar-nav">
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/">Home</a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/portfolio">Portfolio</a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/skills">
+                    <span lang="pl">Umiejętności</span>
+                    <span lang="en">Skills</span>
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" href="/offer">
+                    <span lang="pl">Oferta</span>
+                    <span lang="en">Offer</span>
+                    
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2  active" aria-current="page" href="/contact">
+                    <span lang="pl">Kontakt</span>
+                    <span lang="en">Contact</span>
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" id="selectEn" onclick="setLang('en'); return false">
+                    <img src="/img/gb.svg" alt="English" width="25" title="English language">
+                </a>
+                <a class="nav-link my-1 my-lg-0 mx-lg-1 p-2" id="selectPl" onclick="setLang('pl'); return false">
+                    <img src="/img/pl.svg" alt="Polski" width="25" title="Język polski">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row contact justify-content-center align-items-start">
+        <div class="col-12 text-center">
+            <h1>
+                <span lang="pl">Kontakt</span>
+                <span lang="en">Contact</span>
+            </h1>
+            <p class="mb-0">
+                <span lang="pl">Napisz do mnie</span>
+                <span lang="en">Get in touch</span>
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-4 col-lg-2 mr-md-5 py-2 my-3 my-md-0">
+                
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fa-solid fa-phone mr-2 contactIco"></i>
+                    <div class="ml-2">
+                        <h4>
+                            <span lang="pl">Telefon</span>
+                            <span lang="en">Phone number</span>
+                        </h4>
+                        <p class="mb-0">+48 601 861 478</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fa-solid fa-envelope mr-2 contactIco"></i>
+                    <div class="ml-2">
+                        <h4>E-mail</h4>
+                        <p class="mb-0">wachowski.kajetan@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex flex-row align-items-center mb-4">
+                    <i class="fa-solid fa-location-dot mr-2 contactIco"></i>
+                    <div class="ml-2">
+                        <h4>
+                            <span lang="pl">Lokalizacja</span>
+                            <span lang="en">Location</span>
+                        </h4>
+                        <p class="mb-0">Poznań, 
+                            <span lang="pl">Polska</span>
+                            <span lang="en">Poland</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <form id="contact-form">
+                    <div class="body">
+                        <div class="col-12 form-group mb-3">
+                            <label for="from_name">
+                                <span lang="pl">Imię i nazwisko</span>
+                                <span lang="en">Name and surname</span>*
+                            </label>
+                            <input type="text" name="from_name" id="from_name" class="form-control">
+                        </div>
+                        <div class="col-12 form-group my-3">
+                            <label for="from_email">
+                                <span lang="pl">Adres e-mail</span>
+                                <span lang="en">E-mail address</span>*
+                            </label>
+                            <input type="email" name="from_email" id="from_email" class="form-control">
+                        </div>
+                        <div class="col-12 form-group my-3">
+                            <label for="message">
+                                <span lang="pl">Wiadomość</span>
+                                <span lang="en">Message</span>*
+                            </label>
+                            <textarea name="message" id="message" class="form-control" rows="10"></textarea>
+                        </div>
+                        <div class="d-flex flex-column text-center mt-3 mb-1">
+                                <button class="btn btn-primary btn-lg" type="submit">
+                                    <span lang="pl">Wyślij</span>
+                                    <span lang="en">Send</span> <i class="fa-regular fa-paper-plane ml-2"></i></i>
+                                </button>
+                            <small class="mt-2" id="response"></small>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); color:rgba(255, 255, 255, 0.1)">
+    Copyright © <span id="year"></span> Kajetan Wachowski
+  </div>
+</footer>
+
+<!-- Cookie modal -->
+<div id="cookieModal" class="cookieModal">
+    <div class="cookieModal-content">
+        <h3>
+            <span lang="pl">Polityka prywatności</span>
+            <span lang="en">Privacy policy</span>
+        </h3>
+        <p style="text-align:justify">
+            <span lang="pl">Ta strona korzysta z plików cookies aby świadczyć usługi na najwyższym poziomie. 
+            Aby ją przeglądać, wymagana jest akceptacja <a href="/uploads/polityka-prywatnosci.pdf" target="_blank">polityki prywatności</a>.</span>
+            <span lang="en">This website uses cookies to provide services at the highest level. 
+            To browse it, it is required to accept the <a href="/uploads/polityka-prywatnosci.pdf" target="_blank">privacy policy</a>.</span>
+        </p>
+        <div class="d-flex flex-row-reverse">
+            <button class="btn btn-primary btn-lg" type="button" onclick="closeModal()">
+                <span lang="pl">Akceptuję</span>
+                <span lang="en">Accept</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- ----------- -->
+<script src="/js/scripts.js"></script>
+<script src="/js/contactForm.js"></script>
+</body>
+</html>
