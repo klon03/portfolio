@@ -6,3 +6,5 @@ This website is a project for my studies. Its form was depending on subject requ
 - 4 subpages + home page ✅
 - real content ✅
 - slider - /portfolio ✅
+- redirects - many buttons ✅
+-
